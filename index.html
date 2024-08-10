@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Call Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload="load()">
+    <!-- Call Interface Container -->
+    <div class="call-interface">
+        <!-- Background Image -->
+
+        <div class="background-image">
+            
+        </div>
+
+        <!-- Content on Top of Background -->
+        <!-- <div class="contact-info">
+            <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="Contact Photo" draggable="false" id="contactIcon" class="contact-photo">
+        </div> -->
+
+        <main>
+
+            <section style="text-align: center;" id="setupForm">
+                <label for="lang" style="color:#b6d4ff99" value="spanish">Language:</label><br><br>
+                <select style="color:#b6d4ff99" name="lang" id="language"> 
+                  <option value="spanish">Spanish</option>
+                  <option value="russian">Russian</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                </select><br>
+                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer">BEGIN</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Contact Name -->
+    <h1 class="contact-name" id="speaker">speak now</h1>
+
+    <!-- Audio Element for Playback -->
+    <script>
+
+        class AudioVisualizer {
+            constructor(audioContext, processFrame, processError) {
+                this.audioContext = audioContext;
+                this.processFrame = processFrame;
+                this.connectStream = this.connectStream.bind(this);
+                this.stream = null; // To hold the media stream
+                this.analyser = null; // To hold the analyser node
+                this.animationFrameId = null; // To store the requestAnimationFrame ID
+                this.visualMainElement = document.querySelector('main'); // To hold the reference to the main element
+
+                this.start();
+            }
+
+            async start() {
+                console.log("alhlajhfljhwlejkh")
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+                    this.connectStream(stream);
+                } catch (error) {
+                    if (this.processError) {
+                        this.processError(error);
+                    }
+                }
+            }
+
+            connectStream(stream) {
+                this.stream = stream;
+                this.analyser = this.audioContext.createAnalyser();
+                const source = this.audioContext.createMediaStreamSource(stream);
+                source.connect(this.analyser);
+                this.analyser.smoothingTimeConstant = 0.9; // Make the smoothing more pronounced
+                this.analyser.fftSize = 32;
+
+                this.initRenderLoop(this.analyser);
+            }
+
+            initRenderLoop() {
+                const frequencyData = new Uint8Array(this.analyser.frequencyBinCount);
+                const processFrame = this.processFrame || (() => { });
+
+                const renderFrame = () => {
+                    this.analyser.getByteFrequencyData(frequencyData);
+                    processFrame(frequencyData);
+                    this.animationFrameId = requestAnimationFrame(renderFrame);
+                };
+                this.animationFrameId = requestAnimationFrame(renderFrame);
+            }
+
+            stop(kill) {
+                kill ? window.mediaRecorder.pause() : window.mediaRecorder.stop(); 
+                console.log('Recording stopped.');
+                // Stop the animation frame loop
+                if (this.animationFrameId) {
+                    cancelAnimationFrame(this.animationFrameId);
+                }
+
+                // Disconnect and stop the media stream
+                if (this.stream) {
+                    const tracks = this.stream.getTracks();
+                    tracks.forEach(track => track.stop());
+                }
+
+                // Clean up the analyser
+                if (this.analyser) {
+                    this.analyser.disconnect();
+                }
+
+                // Close the audio context
+                if (this.audioContext) {
+                    this.audioContext.close();
+                }
+
+                // Remove the DOM elements associated with the visualizer
+                if (this.visualMainElement) {
+                    this.visualMainElement.innerHTML = ''; // Clear all child elements
+                }
+
+            }
+
+            resume() {
+                // recording user input:
+
+
+
+                // Check for browser support
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia && !window.mediaRecorder) {
+                    window.chatService = new ChatService();
+
+                    console.log('getUserMedia supported.');
+
+                    // Constraints - only audio needed
+                    window.constraints = { audio: true };
+
+                    let chunks = [];
+
+                    // Function to start recording
+                    navigator.mediaDevices.getUserMedia(constraints)
+                        .then(function (stream) {
+                            window.mediaRecorder = new MediaRecorder(stream);
+
+                            // Start recording : window.mediaRecorder.start();console.log('Recording started...');
+
+                            // Stop recording : window.mediaRecorder.stop();console.log('Recording stopped.');
+
+                            // Collect audio data
+                            mediaRecorder.ondataavailable = function (e) {
+                                chunks.push(e.data);
+                            };
+
+                            // Save the audio file
+                            mediaRecorder.onstop = function (e) {
+                                const blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
+                                chunks = [];
+                                const audioURL = window.URL.createObjectURL(blob);
+                                transcribeUsr(audioURL);
+                                // const audio = document.createElement('audio');  usr audio elem for debugging 
+                                // audio.controls = true;
+                                // audio.src = audioURL;
+                                // document.body.appendChild(audio);
+                            };
+                            window.mediaRecorder.start(); console.log('Recording started...');
+                            // Recreate the audio context and visualizer
+                            this.audioContext = new AudioContext();
+                            this.start();
+
+                            // Recreate DOM elements
+                            createDOMElements();
+                        })
+                        .catch(function (err) {
+                            console.log('The following error occurred: ' + err);
+                        });
+
+
+                } else {
+                    console.log('getUserMedia not supported on your browser! couldnt record audio');
+                    window.mediaRecorder.start(); console.log('Recording started...');
+                    // Recreate the audio context and visualizer
+                    this.audioContext = new AudioContext();
+                    this.start();
+
+                    // Recreate DOM elements
+                    createDOMElements();
+                }
+
+
+            }
+        }
+
+        const visualMainElement = document.querySelector('main');
+        const visualValueCount = 5; // Reduce the number of lines
+        let visualElements = []; // Initialize as an empty array
+        let visualizerInstance;
+
+        function initSoundAnim() {
+            window.createDOMElements = () => {
+                visualMainElement.innerHTML = ''; // Clear existing elements
+                visualElements = []; // Clear existing visual elements
+
+                for (let i = 0; i < visualValueCount; ++i) {
+                    const elm = document.createElement('div');
+                    elm.style.width = '30px'; // Thicker bars
+                    elm.style.height = '200px'; // Initial height for better visibility
+                    elm.style.margin = '0 4px'; // Space between bars
+                    elm.style.borderRadius = '20px'; // Rounded bars
+                    elm.style.backgroundColor = 'lightslategrey'; // Bar color
+                    elm.style.display = 'inline-block'; // Display bars inline
+                    elm.style.verticalAlign = 'bottom'; // Align bars to the bottom
+                    visualMainElement.appendChild(elm);
+                    visualElements.push(elm); // Add the new element to the array
+                }
+            };
+
+            const init = () => {
+                const audioContext = new AudioContext();
+                const initDOM = () => {
+                    visualMainElement.innerHTML = '';
+                    createDOMElements();
+                };
+                initDOM();
+
+                // Map the frequency data so that higher frequencies are in the center
+                const dataMap = { 0: 5, 1: 1, 2: 3, 3: 4, 4: 5 };
+                const processFrame = data => {
+                    const values = Object.values(data);
+                    for (let i = 0; i < visualValueCount; ++i) {
+                        const value = values[dataMap[i]] / 255;
+                        const elmStyles = visualElements[i].style;
+                        elmStyles.transform = `scaleY(${value})`;
+                        elmStyles.opacity = Math.max(0.25, value);
+                        // Update color based on value
+                        elmStyles.backgroundColor = `rgba(255, 255, 255, ${value})`;
+                    }
+                };
+
+                const processError = () => {
+                    visualMainElement.classList.add('error');
+                    visualMainElement.innerText = 'Please allow access to your microphone in order to see this demo.\nNothing bad is going to happen... hopefully :P';
+                };
+
+                // Initialize the visualizer
+                visualizerInstance = new AudioVisualizer(audioContext, processFrame, processError);
+
+            };
+            init();
+
+        }
+
+        
+     //   initSoundAnim()
+    </script>
+    <button onclick="goAi()">SEND</button>
+    <button onclick="kill()">END CONVERSATION</button>
+</body>
+</html>
