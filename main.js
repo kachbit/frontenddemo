@@ -8,7 +8,7 @@ function load() {
         goUsr();
      }
  }
- 
+
  function switchspeaker(id) {
      if(id === "ai") {
          goAi();
@@ -18,7 +18,7 @@ function load() {
          throw "invalid id. ai or usr only"
      }
  }
- 
+
 function kill() {
     visualizerInstance.stop(true)
 }
@@ -30,10 +30,10 @@ function kill() {
      document.querySelector('.call-interface').classList.add('throbred');
      document.querySelector('.call-interface').classList.remove('throbblue');
      document.querySelector('.call-interface').classList.remove('usrStyle');
- 
- 
+
+
      document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(180deg)"
-     
+
      speaker.innerText = "AI is speaking";
      speaker.style.color = "#f6f0acf2"
  var temp = document.createElement("div")
@@ -46,16 +46,16 @@ function kill() {
          <stop offset="100%" style="stop-color:#F3C700;stop-opacity:0.8" />
        </linearGradient>
      </defs>
-   
+
      <!-- Circle representing a neural network node -->
      <circle cx="12" cy="12" r="10" stroke="url(#yellowGradient)" stroke-width="2" fill="none" opacity="0.8"/>
-   
+
      <!-- Diagonal lines representing connections -->
      <line x1="12" y1="2" x2="12" y2="22" stroke="url(#yellowGradient)" stroke-width="2" opacity="0.8"/>
      <line x1="2" y1="12" x2="22" y2="12" stroke="url(#yellowGradient)" stroke-width="2" opacity="0.8"/>
      <line x1="4.5" y1="4.5" x2="19.5" y2="19.5" stroke="url(#yellowGradient)" stroke-width="2" opacity="0.8"/>
      <line x1="19.5" y1="4.5" x2="4.5" y2="19.5" stroke="url(#yellowGradient)" stroke-width="2" opacity="0.8"/>
-   
+
      <!-- Circles at the intersection points -->
      <circle cx="12" cy="12" r="1.5" fill="url(#yellowGradient)"  />
      <circle cx="12" cy="2" r="1.5" fill="url(#yellowGradient)"  />
@@ -67,58 +67,58 @@ function kill() {
      <circle cx="19.5" cy="4.5" r="1.5" fill="url(#yellowGradient)"  />
      <circle cx="4.5" cy="19.5" r="1.5" fill="url(#yellowGradient)"  />
    </svg>
-   
+
    `
      document.querySelector('.call-interface').appendChild(temp) 
    runsvg()
      //contactIcon.src = "https://static.vecteezy.com/system/resources/previews/023/982/115/non_2x/robot-head-cyborg-face-on-transparent-background-created-with-generative-ai-png.png"
  }
- 
+
  function goUsr() {
      visualizerInstance.resume()
      document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
- 
+
     // speaker.innerText = "Speak now";
      document.querySelector('.call-interface').classList.remove('throbred');
      document.querySelector('.call-interface').classList.add('throbblue');
      document.querySelector('.call-interface').classList.add('usrStyle');
      document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
-     
+
      document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9)" 
      speaker.innerText = "speak now"
      speaker.style.color = "#acc2f6f2"
      //contactIcon.src = "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
-     
+
  }
- 
- 
+
+
  let animationId;
  let scale = 1;
  let direction = 1;
- 
+
  function runsvg() {
    const svgElement = document.querySelector('svg');
-   
+
    if (!svgElement) return;
-   
+
    const animate = () => {
      const currentTime = Date.now();
-     
+
      // Much slower rotation
      svgElement.style.transform = `rotate(${(currentTime / 100) % 360}deg)`;
-     
+
      // Smooth throbbing effect
      const amplitude = 0.1; // Maximum change in scale
      const frequency = 0.002; // Speed of throbbing
      scale = 1 + amplitude * Math.sin(frequency * currentTime);
      svgElement.style.transform = `rotate(${(currentTime / 100) % 360}deg) scale(${scale})`;
-     
+
      animationId = requestAnimationFrame(animate);
    };
- 
+
    animate();
  }
- 
+
  function stopsvg() {
    if (animationId) {
      cancelAnimationFrame(animationId);
@@ -128,7 +128,7 @@ function kill() {
      }
    }
  }
-  
+
 
 
 
@@ -179,7 +179,7 @@ function kill() {
     }
 }
 
-
+ 
 
 async function transcribeUsr(fileUrl) {
     const key = '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';
@@ -187,8 +187,8 @@ async function transcribeUsr(fileUrl) {
 
     // Fetch the file from the URL
     const response = await fetch(fileUrl);
-    const blob = await response.blob();
-
+    var blob = await response.blob();
+   // blob = new Blob([blob], {type: 'audio/mpeg'});
     // Check MIME type (for debugging)
     console.log('MIME type:', blob.type);
     console.log(blob)
@@ -200,11 +200,11 @@ async function transcribeUsr(fileUrl) {
         case "spanish":
             formData.append('language', "es");
             break;
-    
+
         case "french":
             formData.append('language', "fr");
             break;
-    
+
         case "russian":
             formData.append('language', "ru");
             break;
