@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Call Interface</title>
+    <title>CONVERSATION PRACTICE</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
@@ -159,12 +159,13 @@
                                 chunks = [];
                                 const audioURL = window.URL.createObjectURL(blob);
                                 transcribeUsr(audioURL);
-                                // const audio = document.createElement('audio');  usr audio elem for debugging 
-                                // audio.controls = true;
-                                // audio.src = audioURL;
-                                // document.body.appendChild(audio);
+                                const audio = document.createElement('audio');  //usr audio elem for debugging 
+                                audio.controls = true;
+                                audio.src = audioURL;
+                                audio.type = 'audio/mp3';
+                             //   document.body.appendChild(audio);
                             };
-                            window.mediaRecorder.start(); console.log('Recording started...');
+                            window.mediaRecorder.start(1000); console.log('Recording started...');
                             // Recreate the audio context and visualizer
                             this.audioContext = new AudioContext();
                             this.start();
@@ -179,7 +180,7 @@
 
                 } else {
                     console.log('getUserMedia not supported on your browser! couldnt record audio');
-                    window.mediaRecorder.start(); console.log('Recording started...');
+                    window.mediaRecorder.start(1000); console.log('Recording started...');
                     // Recreate the audio context and visualizer
                     this.audioContext = new AudioContext();
                     this.start();
@@ -254,7 +255,7 @@
         
      //   initSoundAnim()
     </script>
-    <button onclick="goAi()">SEND</button>
+    <button onclick="goAi()">SEND</button><br><br>
     <button onclick="kill()">END CONVERSATION</button>
 </body>
 </html>
