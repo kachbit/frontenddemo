@@ -134,7 +134,7 @@ function kill() {
 
 
  async function tts(text) {
-    const apiKey = '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';
+    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/audio/speech';
 
     const headers = {
@@ -182,7 +182,7 @@ function kill() {
  
 
 async function transcribeUsr(fileUrl) {
-    const key = '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';
+    const key = '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';
     const url = 'https://api.openai.com/v1/audio/transcriptions';
 
     // Fetch the file from the URL
@@ -246,7 +246,7 @@ async function transcribeUsr(fileUrl) {
 
 class ChatService {
     constructor() {
-        this.apiKey = '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'; // Replace with your actual API key
+        this.apiKey = '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'; // Replace with your actual API key
         this.apiUrl = 'https://api.openai.com/v1/chat/completions';
         this.conversation = [];
         this.systemMessageAdded = false;
