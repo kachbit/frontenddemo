@@ -134,7 +134,7 @@ function kill() {
 
 
  async function tts(text) {
-    const apiKey = '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';
+    const apiKey = 'sk-ZVLOczNOcV2u0t_XsLbnoq-QucxGWLGWTny4e352eMT3BlbkFJh2JqyR5EII-pz_m6l6hRpk_BQMC83RcGvPO85WzmAA';
     const apiUrl = 'https://api.openai.com/v1/audio/speech';
 
     const headers = {
@@ -246,7 +246,7 @@ async function transcribeUsr(fileUrl) {
 
 class ChatService {
     constructor() {
-        this.apiKey = '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'; // Replace with your actual API key
+        this.apiKey = 'sk-ZVLOczNOcV2u0t_XsLbnoq-QucxGWLGWTny4e352eMT3BlbkFJh2JqyR5EII-pz_m6l6hRpk_BQMC83RcGvPO85WzmAA'; // Replace with your actual API key
         this.apiUrl = 'https://api.openai.com/v1/chat/completions';
         this.conversation = [];
         this.systemMessageAdded = false;
