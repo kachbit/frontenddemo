@@ -134,7 +134,7 @@ function kill() {
 
 
  async function tts(text) {
-    const apiKey = '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';
+    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/audio/speech';
 
     const headers = {
@@ -182,7 +182,7 @@ function kill() {
  
 
 async function transcribeUsr(fileUrl) {
-    const key = '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';
+    const key = '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';
     const url = 'https://api.openai.com/v1/audio/transcriptions';
 
     // Fetch the file from the URL
@@ -246,7 +246,7 @@ async function transcribeUsr(fileUrl) {
 
 class ChatService {
     constructor() {
-        this.apiKey = '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'; // Replace with your actual API key
+        this.apiKey = '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'; // Replace with your actual API key
         this.apiUrl = 'https://api.openai.com/v1/chat/completions';
         this.conversation = [];
         this.systemMessageAdded = false;
@@ -315,3 +315,4 @@ make sure the user just speaks in ${lang}. never end the conversation by saying 
         }
     }
 }
+
