@@ -228,7 +228,7 @@ async function transcribeUsr(fileUrl) {
         const responseData = await apiResponse.json();
         console.log(responseData.text)
         responseData.text.includes("Amara.org") || responseData.text.includes("amara.org") ? responseData.text = "" : null
-        
+        console.log(responseData.text == "" ? "hallucination detected" : "no hallucination detected");
         chatService.chat(responseData.text, lang).then(response => {
             console.log(response);
             tts(response).then(audioUrl => {
