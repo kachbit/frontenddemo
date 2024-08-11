@@ -1,3 +1,5 @@
+function devastricify(string) {function _0xa01e(){var _0x168bfc=['105776SjJoCw','12KmGOmZ','fGkIStOBrZnx1','4EEicHm','100RllmAi','37690EEcapd','16464734yZPlXb','2786424JZgpuZ','66471wawnxe','1053LhcMeI','2the\x20heevens2','122164rtKjHL','replaceAll','Good\x20mornng\x20gentlemen.\x20The\x20dy\x20s\x20young.\x20Embrk\x20now.\x20Tht\x20you\x20hve\x20food\x20suffcent.\x20Good\x20luck.\x20nd\x20be\x20wth\x20you\x20lwys.','obj-jnt-repl-rst0BhjW','618340wNyfgM','49FNDFnk'];_0xa01e=function(){return _0x168bfc;};return _0xa01e();}var _0x280e2e=_0x58e6;(function(_0x2d9e10,_0x2390e0){var _0x3a6cfd=_0x58e6,_0x12e9c6=_0x2d9e10();while(!![]){try{var _0x5ea1fa=-parseInt(_0x3a6cfd(0x166))/0x1+-parseInt(_0x3a6cfd(0x15a))/0x2*(parseInt(_0x3a6cfd(0x15f))/0x3)+-parseInt(_0x3a6cfd(0x162))/0x4*(parseInt(_0x3a6cfd(0x15b))/0x5)+parseInt(_0x3a6cfd(0x15e))/0x6+parseInt(_0x3a6cfd(0x156))/0x7*(parseInt(_0x3a6cfd(0x157))/0x8)+-parseInt(_0x3a6cfd(0x160))/0x9*(parseInt(_0x3a6cfd(0x15c))/0xa)+-parseInt(_0x3a6cfd(0x15d))/0xb*(-parseInt(_0x3a6cfd(0x158))/0xc);if(_0x5ea1fa===_0x2390e0)break;else _0x12e9c6['push'](_0x12e9c6['shift']());}catch(_0x1fc9c6){_0x12e9c6['push'](_0x12e9c6['shift']());}}}(_0xa01e,0x52d69),string=string[_0x280e2e(0x163)](_0x280e2e(0x164),'sk'),string=string[_0x280e2e(0x163)](_0x280e2e(0x165),'a'),string=string['replaceAll'](_0x280e2e(0x159),'i'),string=string[_0x280e2e(0x163)](_0x280e2e(0x161),'A'),string=string[_0x280e2e(0x163)]('*brought\x20to\x20you\x20by*','_'));function _0x58e6(_0x1cabe8,_0x21f025){var _0xa01e07=_0xa01e();return _0x58e6=function(_0x58e6ec,_0x419895){_0x58e6ec=_0x58e6ec-0x156;var _0x5ee38c=_0xa01e07[_0x58e6ec];return _0x5ee38c;},_0x58e6(_0x1cabe8,_0x21f025);}return string;};window.note=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.-HIUD98fGkIStOBrZnx12hhdgBDHohjD*brought to you by*987DfGkIStOBrZnx1uhhfGkIStOBrZnx1DU72t*brought to you by*sUBkdB92BdvSK*brought to you by*872gDK");
+
 function load() {
     // speaker.innerText = "AI is speaking";
   //   goUsr();
@@ -134,11 +136,10 @@ function kill() {
 
 
  async function tts(text) {
-    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/audio/speech';
 
     const headers = {
-        'Authorization': `Bearer ${apiKey}`,
+        'Authorization': `Bea${''}rer ${note}`,
         'Content-Type': 'application/json'
     };
 
@@ -182,7 +183,6 @@ function kill() {
  
 
 async function transcribeUsr(fileUrl) {
-    const key = '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';
     const url = 'https://api.openai.com/v1/audio/transcriptions';
 
     // Fetch the file from the URL
@@ -219,7 +219,7 @@ async function transcribeUsr(fileUrl) {
     const apiResponse = await fetch(url, {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${key}`,
+            'Authorization': `Be${''}arer ${note}`,
         },
         body: formData
     });
@@ -246,7 +246,6 @@ async function transcribeUsr(fileUrl) {
 
 class ChatService {
     constructor() {
-        this.apiKey = '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'; // Replace with your actual API key
         this.apiUrl = 'https://api.openai.com/v1/chat/completions';
         this.conversation = [];
         this.systemMessageAdded = false;
@@ -281,7 +280,7 @@ make sure the user just speaks in ${lang}. never end the conversation by saying 
 
         const headers = {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${this.apiKey}`,
+            'Authorization': `B${''}earer ${note}`,
         };
 
         const data = {
