@@ -23,17 +23,17 @@
             <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg" alt="Contact Photo" draggable="false" id="contactIcon" class="contact-photo">
         </div> -->
 
-        <main>
+        <main style="width: 100%;">
 
-            <section style="text-align: center;" id="setupForm">
-                <label for="lang" style="color:#b6d4ff99" value="spanish">Language:</label><br><br>
-                <select style="color:#b6d4ff99" name="lang" id="language"> 
+            <section style="text-align: center;width: 100%;" id="setupForm">
+                <label for="lang" style="color:#b6d4ff99;width:180px;font-size: 20px;" value="spanish">Select desired language to begin:</label><br><br>
+                <select style="color:#b6d4ff99;width:70%;height:80px;text-align: center;border-radius: 25px;" name="lang" id="language"> 
                   <option value="spanish">Spanish</option>
                   <option value="russian">Russian</option>
                   <option value="french">French</option>
                   <option value="german">German</option>
                 </select><br>
-                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer">BEGIN</button>
+                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer;width:40%;height:40px;border-radius: 15px;"  >BEGIN</button>
             </section>
         </main>
     </div>
@@ -226,7 +226,7 @@
                 initDOM();
 
                 // Map the frequency data so that higher frequencies are in the center
-                const dataMap = { 0: 5, 1: 1, 2: 3, 3: 4, 4: 5 };
+                const dataMap = { 0: 5, 1: 2, 2: 2, 3: 3, 4: 4 };
                 const processFrame = data => {
                     const values = Object.values(data);
                     for (let i = 0; i < visualValueCount; ++i) {
@@ -255,7 +255,9 @@
         
      //   initSoundAnim()
     </script>
-    <button onclick="goAi()">SEND</button><br><br>
-    <button onclick="kill()">END CONVERSATION</button>
+    <button onclick="goAi()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width:190px">SEND</button><br><br>
+    <button onclick="kill()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 190px;">END CONVERSATION</button>
+    <button onclick="goUsr()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 190px;">SPEAK</button>
+
 </body>
 </html>

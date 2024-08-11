@@ -22,16 +22,45 @@ function load() {
  }
 
 function kill() {
-    visualizerInstance.stop(true)
+    goEnd();
+}
+var mode = "";
+function goEnd() {
+    mode = "end";
+    try {
+        visualizerInstance.stop(true);
+
+    }   catch {}
+
+    if(window.audiolist) {
+        for(let aud in window.audiolist) {
+            console.log("audio  = " + window.audiolist[aud])
+            window.audiolist[aud].pause();
+        }
+    }
+    document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(90deg)"
+    document.querySelector('.call-interface').classList.remove('throbyel');
+    document.querySelector('.call-interface').classList.remove('throbblue');
+    document.querySelector('.call-interface').querySelector("main").innerHTML = `
+    Conversation paused. <br>click "speak" to resume
+    `
+    document.querySelector('.call-interface').classList.add('throbred');
+    document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
+    document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
+    speaker.innerText = ""
+    speaker.style.color = "lightcoral"
 }
 
  function goAi() {
+    mode = "ai";
+
      visualizerInstance.stop()
      document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
    //  speaker.innerText = "AI is speaking";
-     document.querySelector('.call-interface').classList.add('throbred');
+     document.querySelector('.call-interface').classList.add('throbyel');
      document.querySelector('.call-interface').classList.remove('throbblue');
-     document.querySelector('.call-interface').classList.remove('usrStyle');
+     document.querySelector('.call-interface').classList.remove('throbred');
+
 
 
      document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(180deg)"
@@ -77,13 +106,29 @@ function kill() {
  }
 
  function goUsr() {
+    mode = "usr";
+
+//     try { 
+//     if(window.audio) {
+//         for(let aud of window.audio) {
+//             if (aud != window.audio.last) {aud.pause()};
+//         }
+//     }
+// } catch {}
+if(window.audiolist) {
+    for(let aud in window.audiolist) {
+        console.log("audio  = " + window.audiolist[aud])
+        window.audiolist[aud].pause();
+    }
+}
      visualizerInstance.resume()
      document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
 
     // speaker.innerText = "Speak now";
+     document.querySelector('.call-interface').classList.remove('throbyel');
      document.querySelector('.call-interface').classList.remove('throbred');
+
      document.querySelector('.call-interface').classList.add('throbblue');
-     document.querySelector('.call-interface').classList.add('usrStyle');
      document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
 
      document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9)" 
@@ -161,8 +206,11 @@ function kill() {
             const audioUrl = URL.createObjectURL(audioBlob);
 
             // Create and play audio without adding it to the DOM
-            const audio = new Audio(audioUrl);
-            audio.play();
+            audio = new Audio(audioUrl)
+
+            window.audiolist ? window.audiolist.push(audio) : window.audiolist = [];
+            
+            if(mode === "ai") {audio.play()};
             audio.addEventListener('ended', () => {
                 goUsr();
             });

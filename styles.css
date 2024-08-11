@@ -26,9 +26,10 @@ html {
 
 .call-interface {
   position: relative;
-  width: 80%;
+  width: 50%;
+  padding: 30px;
   /* Adjust the width as needed */
-  height: 55%;
+  height: 45%;
   /* Adjust the height as needed */
   border-radius: 40px;
   border: 2px solid rgb(42, 42, 54);
@@ -83,7 +84,7 @@ svg {
 .contact-name {
   font-size: 18px;
   /* Increased size for better readability */
-  color: #acc2f6f2;
+  color: lightslategray;
   margin-top: 10px;
   /* Space above the contact name */
   transition: color 0.3s;
@@ -107,7 +108,7 @@ svg {
   height: 30px;
 }
 
-@keyframes throbred {
+@keyframes throbyel {
 
   0%,
   100% {
@@ -131,8 +132,20 @@ svg {
   }
 }
 
-.throbred {
-  animation: throbred 3s infinite ease-in-out;
+@keyframes throbred {
+
+  0%,
+  100% {
+    border-width: 1px;
+  }
+
+  50% {
+    border-width: 4px;
+  }
+}
+
+.throbyel {
+  animation: throbyel 3s infinite ease-in-out;
   border-style: solid;
   border-color: darkkhaki;
 }
@@ -141,6 +154,12 @@ svg {
   animation: throbblue 3s infinite ease-in-out;
   border-style: solid;
   border-color: lightslategray;
+}
+
+.throbred {
+  animation: throbblue 3s infinite ease-in-out;
+  border-style: solid;
+  border-color: lightcoral;
 }
 
 /* .usrStyle {
@@ -189,7 +208,7 @@ select {
   outline: 0px none;
   padding: 10px;
   background-color: #586d9749;
-  color: white;
+  color: #f2f6fb99;
   border: 2px solid #494f5c98;
   border-radius: 10px;
   cursor: pointer;
