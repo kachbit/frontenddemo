@@ -36,6 +36,7 @@ function goEnd() {
         for(let aud in window.audiolist) {
             console.log("audio  = " + window.audiolist[aud])
             window.audiolist[aud].pause();
+            console.log("all audio killed")
         }
     }
     document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(90deg)"
@@ -119,6 +120,7 @@ if(window.audiolist) {
     for(let aud in window.audiolist) {
         console.log("audio  = " + window.audiolist[aud])
         window.audiolist[aud].pause();
+        console.log("all audio killed")
     }
 }
      visualizerInstance.resume()
@@ -207,10 +209,12 @@ if(window.audiolist) {
 
             // Create and play audio without adding it to the DOM
             audio = new Audio(audioUrl)
-
+            
             window.audiolist ? window.audiolist.push(audio) : window.audiolist = [];
             
-            if(mode === "ai") {audio.play()};
+            if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {
+                console.log("Didnt play audio bc not in ai mode")
+            };
             audio.addEventListener('ended', () => {
                 goUsr();
             });
