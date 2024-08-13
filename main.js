@@ -32,13 +32,10 @@ function goEnd() {
 
     }   catch {}
 
-    if(window.audiolist) {
-        for(let aud in window.audiolist) {
-            console.log("audio  = " + window.audiolist[aud])
-            window.audiolist[aud].pause();
+ 
+            audio.pause();
             console.log("all audio killed")
-        }
-    }
+ 
     document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(90deg)"
     document.querySelector('.call-interface').classList.remove('throbyel');
     document.querySelector('.call-interface').classList.remove('throbblue');
@@ -122,13 +119,10 @@ function goEnd() {
 //         }
 //     }
 // } catch {}
-if(window.audiolist) {
-    for(let aud in window.audiolist) {
-        console.log("audio  = " + window.audiolist[aud])
-        window.audiolist[aud].pause();
+
+        audio.pause();
         console.log("all audio killed")
-    }
-}
+
      visualizerInstance.resume()
      document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
 
@@ -217,7 +211,6 @@ if(window.audiolist) {
             audio.src = audioUrl;
             //audioUrl
             audio.autoplay = true;
-            window.audiolist ? window.audiolist.push(audio) : window.audiolist = [];
             
             if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {
                 console.log("Didnt play audio bc not in ai mode")
