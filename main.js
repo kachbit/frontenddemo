@@ -108,7 +108,13 @@ function goEnd() {
 
  function goUsr() {
     mode = "usr";
-
+    // on start conversation, play blank audio to avoid ios autoplay audio restrictions
+    if(typeof audio === 'undefined') {
+        console.log("first goUsr()")
+        window.audio = new Audio();
+        audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
+        audio.play();
+    }
 //     try { 
 //     if(window.audio) {
 //         for(let aud of window.audio) {
@@ -208,8 +214,9 @@ if(window.audiolist) {
             const audioUrl = URL.createObjectURL(audioBlob);
 
             // Create and play audio without adding it to the DOM
-            audio = new Audio(audioUrl)
-            
+            audio.src = audioUrl;
+            //audioUrl
+            audio.autoplay = true;
             window.audiolist ? window.audiolist.push(audio) : window.audiolist = [];
             
             if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {
