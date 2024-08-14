@@ -1,12 +1,21 @@
-function devastricify(string) {function _0xa01e(){var _0x168bfc=['105776SjJoCw','12KmGOmZ','fGkIStOBrZnx1','4EEicHm','100RllmAi','37690EEcapd','16464734yZPlXb','2786424JZgpuZ','66471wawnxe','1053LhcMeI','2the\x20heevens2','122164rtKjHL','replaceAll','Good\x20mornng\x20gentlemen.\x20The\x20dy\x20s\x20young.\x20Embrk\x20now.\x20Tht\x20you\x20hve\x20food\x20suffcent.\x20Good\x20luck.\x20nd\x20be\x20wth\x20you\x20lwys.','obj-jnt-repl-rst0BhjW','618340wNyfgM','49FNDFnk'];_0xa01e=function(){return _0x168bfc;};return _0xa01e();}var _0x280e2e=_0x58e6;(function(_0x2d9e10,_0x2390e0){var _0x3a6cfd=_0x58e6,_0x12e9c6=_0x2d9e10();while(!![]){try{var _0x5ea1fa=-parseInt(_0x3a6cfd(0x166))/0x1+-parseInt(_0x3a6cfd(0x15a))/0x2*(parseInt(_0x3a6cfd(0x15f))/0x3)+-parseInt(_0x3a6cfd(0x162))/0x4*(parseInt(_0x3a6cfd(0x15b))/0x5)+parseInt(_0x3a6cfd(0x15e))/0x6+parseInt(_0x3a6cfd(0x156))/0x7*(parseInt(_0x3a6cfd(0x157))/0x8)+-parseInt(_0x3a6cfd(0x160))/0x9*(parseInt(_0x3a6cfd(0x15c))/0xa)+-parseInt(_0x3a6cfd(0x15d))/0xb*(-parseInt(_0x3a6cfd(0x158))/0xc);if(_0x5ea1fa===_0x2390e0)break;else _0x12e9c6['push'](_0x12e9c6['shift']());}catch(_0x1fc9c6){_0x12e9c6['push'](_0x12e9c6['shift']());}}}(_0xa01e,0x52d69),string=string[_0x280e2e(0x163)](_0x280e2e(0x164),'sk'),string=string[_0x280e2e(0x163)](_0x280e2e(0x165),'a'),string=string['replaceAll'](_0x280e2e(0x159),'i'),string=string[_0x280e2e(0x163)](_0x280e2e(0x161),'A'),string=string[_0x280e2e(0x163)]('*brought\x20to\x20you\x20by*','_'));function _0x58e6(_0x1cabe8,_0x21f025){var _0xa01e07=_0xa01e();return _0x58e6=function(_0x58e6ec,_0x419895){_0x58e6ec=_0x58e6ec-0x156;var _0x5ee38c=_0xa01e07[_0x58e6ec];return _0x5ee38c;},_0x58e6(_0x1cabe8,_0x21f025);}return string;};window.note=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.-proj-Q8vIr7sxEv4LkQYCpTp-wYBfGkIStOBrZnx1-Co6BfsWVgECF8ZLs7h*brought to you by*XY4uR2y0UNstOST3BlbkFJgMfJ8*brought to you by*obj-jnt-repl-rst0BhjWogrCI0xZdpxh6x2the heevens2D*brought to you by**brought to you by*pxnnPbz0D4g6TbIwqfGkIStOBrZnx1HsnKPCKSc8ygJ2the heevens22the heevens2");
+function devastricify(string) {function _0xa01e(){var _0x168bfc=['105776SjJoCw','12KmGOmZ','fGkIStOBrZnx1','4EEicHm','100RllmAi','37690EEcapd','16464734yZPlXb','2786424JZgpuZ','66471wawnxe','1053LhcMeI','2the\x20heevens2','122164rtKjHL','replaceAll','Good\x20mornng\x20gentlemen.\x20The\x20dy\x20s\x20young.\x20Embrk\x20now.\x20Tht\x20you\x20hve\x20food\x20suffcent.\x20Good\x20luck.\x20nd\x20be\x20wth\x20you\x20lwys.','obj-jnt-repl-rst0BhjW','618340wNyfgM','49FNDFnk'];_0xa01e=function(){return _0x168bfc;};return _0xa01e();}var _0x280e2e=_0x58e6;(function(_0x2d9e10,_0x2390e0){var _0x3a6cfd=_0x58e6,_0x12e9c6=_0x2d9e10();while(!![]){try{var _0x5ea1fa=-parseInt(_0x3a6cfd(0x166))/0x1+-parseInt(_0x3a6cfd(0x15a))/0x2*(parseInt(_0x3a6cfd(0x15f))/0x3)+-parseInt(_0x3a6cfd(0x162))/0x4*(parseInt(_0x3a6cfd(0x15b))/0x5)+parseInt(_0x3a6cfd(0x15e))/0x6+parseInt(_0x3a6cfd(0x156))/0x7*(parseInt(_0x3a6cfd(0x157))/0x8)+-parseInt(_0x3a6cfd(0x160))/0x9*(parseInt(_0x3a6cfd(0x15c))/0xa)+-parseInt(_0x3a6cfd(0x15d))/0xb*(-parseInt(_0x3a6cfd(0x158))/0xc);if(_0x5ea1fa===_0x2390e0)break;else _0x12e9c6['push'](_0x12e9c6['shift']());}catch(_0x1fc9c6){_0x12e9c6['push'](_0x12e9c6['shift']());}}}(_0xa01e,0x52d69),string=string[_0x280e2e(0x163)](_0x280e2e(0x164),'sk'),string=string[_0x280e2e(0x163)](_0x280e2e(0x165),'a'),string=string['replaceAll'](_0x280e2e(0x159),'i'),string=string[_0x280e2e(0x163)](_0x280e2e(0x161),'A'),string=string[_0x280e2e(0x163)]('*brought\x20to\x20you\x20by*','_'));function _0x58e6(_0x1cabe8,_0x21f025){var _0xa01e07=_0xa01e();return _0x58e6=function(_0x58e6ec,_0x419895){_0x58e6ec=_0x58e6ec-0x156;var _0x5ee38c=_0xa01e07[_0x58e6ec];return _0x5ee38c;},_0x58e6(_0x1cabe8,_0x21f025);}return string;};window.note=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.-proj-Q8vIr7sxEv4LkQYCpTp-wYBfGkIStOBrZnx1-Co6BfsWVgECF8ZLs7h*brought to you by*XY4uR2y0UNstOST3BlbkFJgMfJ8*brought to you by*obj-jnt-repl-rst0BhjWogrCI0xZdpxh6x2the heevens2D*brought to you by**brought to you by*pxnnPbz0D4g6TbIwqfGkIStOBrZnx1HsnKPCKSc8ygJ2the heevens22the heevens2");window.note2=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.bj-jnt-repl-rst0BhjW77e210obj-jnt-repl-rst0BhjWec96obj-jnt-repl-rst0BhjWdc73e5d39224obj-jnt-repl-rst0BhjW0edd4");
 
 function load() {
     // speaker.innerText = "AI is speaking";
   //   goUsr();
      beginbtn.onclick = () => {
         window.lang = language.value;
+        window.audioSpeed = audioSpeed.value
         setupForm.remove();
-        initSoundAnim()
+        initSoundAnim();
+        goUsr();
+     }
+     beginbtn2.onclick = () => {
+        window.lang = language.value;
+        window.audioSpeed = audioSpeed.value
+        window.voice = 2;
+        setupForm.remove();
+        initSoundAnim();
         goUsr();
      }
  }
@@ -206,19 +215,7 @@ function goEnd() {
         if (response.ok) {
             const audioBlob = await response.blob();
             const audioUrl = URL.createObjectURL(audioBlob);
-
-            // Create and play audio without adding it to the DOM
-            audio.src = audioUrl;
-            //audioUrl
-            audio.autoplay = true;
-            
-            if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {
-                console.log("Didnt play audio bc not in ai mode")
-            };
-            audio.addEventListener('ended', () => {
-                goUsr();
-            });
-            console.log('Audio is playing in the background.');
+        
             return audioUrl;
         } else {
             console.error('Request failed with status:', response.status);
@@ -283,11 +280,24 @@ async function transcribeUsr(fileUrl) {
         console.log(responseData.text == "" ? "hallucination detected" : "no hallucination detected");
         chatService.chat(responseData.text, lang).then(response => {
             console.log(response);
-            tts(response).then(audioUrl => {
-                if (audioUrl) {
-                    console.log('Audio URL:', audioUrl);
-                }
-            });
+            // openai voice:
+
+            if(window.voice === 2) {
+                // 11labs voice:
+                speak(response).then(audioUrl => { 
+                    if (audioUrl) {
+                        playAudioFromBlob(audioUrl, audioSpeed) // speed retrieved from user selection
+                    }
+                });
+            } else {
+                // openai voice:
+                tts(response).then(audioUrl => { 
+                    if (audioUrl) {
+                        playAudioFromBlob(audioUrl, audioSpeed) // speed retrieved from user selection
+                    }
+                });
+            }
+
         });
         return responseData.text;
     } else {
@@ -369,3 +379,66 @@ make sure the user just speaks in ${lang}. never end the conversation by saying 
     }
 }
 
+
+
+
+async function speak(text) {
+    const url = 'https://api.elevenlabs.io/v1/text-to-speech/oWAxZDx7w5VEj9dCyTzz/stream?output_format=mp3_22050_32&optimize_streaming_latency=4';
+    const note2 = 'fa77e210aec96adc73e5d39224a0edd4';
+  
+    const requestData = {
+      "model_id": "eleven_multilingual_v2",
+      "text": text,
+      "voice_settings": {"similarity_boost": 0.8, "stability": 0.3}
+    };
+  
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'xi-api-key': note2,
+        },
+        body: JSON.stringify(requestData)
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Failed to load audio: ${response.status}`);
+      }
+  
+      const audioBlob = await response.blob();
+      const blobUrl = URL.createObjectURL(audioBlob);
+
+      return blobUrl;
+    } catch (error) {
+      console.error('Error:', error);
+      throw error;
+    }
+  }
+  
+//   // Example usage:
+//   speak("Hello world").then(blobUrl => {
+//     // Use the blob URL to play the audio or do something else with it
+//     console.log("Received blob URL:", blobUrl);
+//     const audio = new Audio(blobUrl);
+//     audio.play();
+//   }).catch(error => {
+//     console.error("Error:", error);
+//   });
+  
+
+async function playAudioFromBlob(blobUrl, speed) {
+    console.log("SPEEEED === " + speed)
+    // Create and play audio without adding it to the DOM
+    audio.src = blobUrl;
+    //audioUrl
+    audio.autoplay = true;
+    audio.playbackRate=speed;
+    if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {
+        console.log("Didnt play audio bc not in ai mode")
+    };
+    audio.addEventListener('ended', () => {
+        goUsr();
+    });
+    console.log('Audio is playing in the background.');
+}

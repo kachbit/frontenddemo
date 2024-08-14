@@ -26,14 +26,29 @@
         <main style="width: 100%;">
 
             <section style="text-align: center;width: 100%;" id="setupForm">
-                <label for="lang" style="color:#b6d4ff99;width:180px;font-size: 20px;" value="spanish">Select desired language to begin:</label><br><br>
-                <select style="color:#b6d4ff99;width:70%;height:80px;text-align: center;border-radius: 25px;appearance: none !important;text-align-last:center;" name="lang" id="language"> 
+                <label style="color:#b6d4ff99;width:180px;font-size: 20px;" value="spanish">Select desired settings to begin:</label><br><br>
+                <label for="lang" style="color:#b6d4ff99;margin:15px;font-size: 15px;" value="1">language:</label>
+                
+                <select style="color:#b6d4ff99;width:70%;height:40px;width:150px;text-align: center;border-radius: 25px;appearance: none !important;text-align-last:center;" name="lang" id="language"> 
                   <option value="spanish">Spanish</option>
                   <option value="russian">Russian</option>
                   <option value="french">French</option>
                   <option value="german">German</option>
                 </select><br>
-                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer;width:40%;height:40px;border-radius: 15px;"  >BEGIN</button>
+                <label for="speed" style="color:#b6d4ff99;margin:15px;font-size: 15px;">voice speed:</label>
+                <select style="color:#b6d4ff99;width:70%;height:40px;width:150px;text-align: center;border-radius: 25px;appearance: none !important;text-align-last:center;" name="speed" id="audioSpeed"> 
+                  <option value="0.5">0.5x</option>
+                  <option value="0.75">0.75x</option>
+                  <option value="1" selected="selected">1x (normal)</option>
+                  <option value="1.5">1.5x</option>
+                  <option value="2">2x</option>
+                  <option value="2.5">2.5x</option>
+                  <option value="3">3x</option>
+
+                </select><br>
+                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer;width:40%;height:40px;border-radius: 15px;"  >Start using voice 1</button><br>
+                <button id="beginbtn2" style="color:#b6d4ff99;cursor:pointer;width:40%;height:40px;border-radius: 15px;"  >Start using voice 2</button>
+
             </section>
         </main>
     </div>
