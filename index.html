@@ -10,6 +10,7 @@
 </head>
 
 <body onload="load()">
+    <h1 style="text-align: center;">AI Language Chat</h1>
     <!-- Call Interface Container -->
     <div class="call-interface">
         <!-- Background Image -->
@@ -26,29 +27,39 @@
         <main style="width: 100%;">
 
             <section style="text-align: center;width: 100%;" id="setupForm">
-                <label style="color:#b6d4ff99;width:180px;font-size: 20px;" value="spanish">Select desired settings to begin:</label><br><br>
-                <label for="lang" style="color:#b6d4ff99;margin:15px;font-size: 15px;" value="1">language:</label>
-                
-                <select style="color:#b6d4ff99;width:70%;height:40px;width:150px;text-align: center;border-radius: 25px;appearance: none !important;text-align-last:center;" name="lang" id="language"> 
-                  <option value="spanish">Spanish</option>
-                  <option value="russian">Russian</option>
-                  <option value="french">French</option>
-                  <option value="german">German</option>
-                </select><br>
-                <label for="speed" style="color:#b6d4ff99;margin:15px;font-size: 15px;">voice speed:</label>
-                <select style="color:#b6d4ff99;width:70%;height:40px;width:150px;text-align: center;border-radius: 25px;appearance: none !important;text-align-last:center;" name="speed" id="audioSpeed"> 
-                  <option value="0.5">0.5x</option>
-                  <option value="0.75">0.75x</option>
-                  <option value="1" selected="selected">1x (normal)</option>
-                  <option value="1.5">1.5x</option>
-                  <option value="2">2x</option>
-                  <option value="2.5">2.5x</option>
-                  <option value="3">3x</option>
+                <label style="color:#b6d4ff99;width:180px;font-size: 27px;" value="spanish">Select desired settings to begin:</label><br><br>
+                <div class="form-group">
+                    <label for="lang" class="form-label">Language:</label>
+                    <select name="lang" id="language" class="form-select"> 
+                      <option value="spanish">Spanish</option>
+                      <option value="russian">Russian</option>
+                      <option value="french">French</option>
+                      <option value="german">German</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="speed" class="form-label">Voice Speed:</label>
+                    <select name="speed" id="audioSpeed" class="form-select"> 
+                      <option value="0.5">0.5x</option>
+                      <option value="0.75">0.75x</option>
+                      <option value="1" selected="selected">1x (normal)</option>
+                      <option value="1.5">1.5x</option>
+                      <option value="2">2x</option>
+                      <option value="2.5">2.5x</option>
+                      <option value="3">3x</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="voice" class="form-label">Voice style:</label>
+                    <select name="voice" id="voiceStyle" class="form-select"> 
+                      <option value="2">11Labs (may not work)</option>
+                      <option value="1" selected="selected">OAI</option>
+                    </select>
+                </div>
+        
 
                 </select><br>
-                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer;width:fit-content;height:fit-content;border-radius: 15px;"  >Start using voice 1</button><br>
-                <button id="beginbtn2" style="color:#b6d4ff99;cursor:pointer;width:fit-content;height:fit-content;border-radius: 15px;"  >Start using voice 2</button>
-
+                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer;width:fit-content;height:fit-content;border-radius: 8px;margin:0px"  >Begin Conversation</button><br>
             </section>
         </main>
     </div>
@@ -270,9 +281,10 @@
         
      //   initSoundAnim()
     </script>
-    <button onclick="goAi()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width:190px;">SEND</button>
-    <button onclick="kill()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 190px;">END CONVERSATION</button>
-    <button onclick="goUsr();" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 190px;">SPEAK</button>
-
+    <div class="controlBtns">
+        <button onclick="kill()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 210px;">STOP</button>
+        <button onclick="goAi()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width:210px;" class="throblight">SEND</button>
+        <button onclick="goUsr();" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 210px;">SPEAK</button>
+    </div>
 </body>
 </html>

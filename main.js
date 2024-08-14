@@ -1,19 +1,21 @@
 function devastricify(string) {function _0xa01e(){var _0x168bfc=['105776SjJoCw','12KmGOmZ','fGkIStOBrZnx1','4EEicHm','100RllmAi','37690EEcapd','16464734yZPlXb','2786424JZgpuZ','66471wawnxe','1053LhcMeI','2the\x20heevens2','122164rtKjHL','replaceAll','Good\x20mornng\x20gentlemen.\x20The\x20dy\x20s\x20young.\x20Embrk\x20now.\x20Tht\x20you\x20hve\x20food\x20suffcent.\x20Good\x20luck.\x20nd\x20be\x20wth\x20you\x20lwys.','obj-jnt-repl-rst0BhjW','618340wNyfgM','49FNDFnk'];_0xa01e=function(){return _0x168bfc;};return _0xa01e();}var _0x280e2e=_0x58e6;(function(_0x2d9e10,_0x2390e0){var _0x3a6cfd=_0x58e6,_0x12e9c6=_0x2d9e10();while(!![]){try{var _0x5ea1fa=-parseInt(_0x3a6cfd(0x166))/0x1+-parseInt(_0x3a6cfd(0x15a))/0x2*(parseInt(_0x3a6cfd(0x15f))/0x3)+-parseInt(_0x3a6cfd(0x162))/0x4*(parseInt(_0x3a6cfd(0x15b))/0x5)+parseInt(_0x3a6cfd(0x15e))/0x6+parseInt(_0x3a6cfd(0x156))/0x7*(parseInt(_0x3a6cfd(0x157))/0x8)+-parseInt(_0x3a6cfd(0x160))/0x9*(parseInt(_0x3a6cfd(0x15c))/0xa)+-parseInt(_0x3a6cfd(0x15d))/0xb*(-parseInt(_0x3a6cfd(0x158))/0xc);if(_0x5ea1fa===_0x2390e0)break;else _0x12e9c6['push'](_0x12e9c6['shift']());}catch(_0x1fc9c6){_0x12e9c6['push'](_0x12e9c6['shift']());}}}(_0xa01e,0x52d69),string=string[_0x280e2e(0x163)](_0x280e2e(0x164),'sk'),string=string[_0x280e2e(0x163)](_0x280e2e(0x165),'a'),string=string['replaceAll'](_0x280e2e(0x159),'i'),string=string[_0x280e2e(0x163)](_0x280e2e(0x161),'A'),string=string[_0x280e2e(0x163)]('*brought\x20to\x20you\x20by*','_'));function _0x58e6(_0x1cabe8,_0x21f025){var _0xa01e07=_0xa01e();return _0x58e6=function(_0x58e6ec,_0x419895){_0x58e6ec=_0x58e6ec-0x156;var _0x5ee38c=_0xa01e07[_0x58e6ec];return _0x5ee38c;},_0x58e6(_0x1cabe8,_0x21f025);}return string;};window.note=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.-proj-Q8vIr7sxEv4LkQYCpTp-wYBfGkIStOBrZnx1-Co6BfsWVgECF8ZLs7h*brought to you by*XY4uR2y0UNstOST3BlbkFJgMfJ8*brought to you by*obj-jnt-repl-rst0BhjWogrCI0xZdpxh6x2the heevens2D*brought to you by**brought to you by*pxnnPbz0D4g6TbIwqfGkIStOBrZnx1HsnKPCKSc8ygJ2the heevens22the heevens2");window.note2=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.bj-jnt-repl-rst0BhjW77e210obj-jnt-repl-rst0BhjWec96obj-jnt-repl-rst0BhjWdc73e5d39224obj-jnt-repl-rst0BhjW0edd4");
 
+
 function load() {
+    var interfaceArea = document.querySelector(".call-interface")
+
+
+    interfaceArea.style.width = window.getComputedStyle(interfaceArea, null)["width"]
+    interfaceArea.style.height = window.getComputedStyle(interfaceArea, null)["height"]
+
+    
     // speaker.innerText = "AI is speaking";
   //   goUsr();
      beginbtn.onclick = () => {
+        document.querySelector(".controlBtns").style.visibility = "visible";
         window.lang = language.value;
-        window.audioSpeed = audioSpeed.value
-        setupForm.remove();
-        initSoundAnim();
-        goUsr();
-     }
-     beginbtn2.onclick = () => {
-        window.lang = language.value;
-        window.audioSpeed = audioSpeed.value
-        window.voice = 2;
+        window.audioSpeed = audioSpeed.value;
+        window.voice = parseInt(voiceStyle.value);
         setupForm.remove();
         initSoundAnim();
         goUsr();
@@ -29,27 +31,34 @@ function load() {
          throw "invalid id. ai or usr only"
      }
  }
-
+function restart() {
+    // restarts entire conversation
+    window.location.reload(); // we will just reload for now but better imlementation is needed in the future
+}
 function kill() {
     goEnd();
 }
 var mode = "";
 function goEnd() {
     mode = "end";
+    
     try {
-        visualizerInstance.stop(true);
-
+        visualizerInstance.stop();
+        console.log("MIC INPUT ENDED")
     }   catch {}
 
  
-            audio.pause();
+                audio.pause();                
+ 
+
+      //      audio.pause();
             console.log("all audio killed")
  
     document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(90deg)"
     document.querySelector('.call-interface').classList.remove('throbyel');
     document.querySelector('.call-interface').classList.remove('throbblue');
     document.querySelector('.call-interface').querySelector("main").innerHTML = `
-    Conversation paused. <br>click "speak" to resume
+    <div style="text-align:center">Conversation paused.<br>Click SPEAK to resume<br><span class='subbub'>OR</span><br><button onclick="restart()" style="color:white;cursor:pointer;width:fit-content;height:fit-content;border-radius: 8px;margin:0px;border: 2px solid rosybrown;margin: 5px;background-color: #9758584a;">RESTART</button></div>
     `
     document.querySelector('.call-interface').classList.add('throbred');
     document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
@@ -74,7 +83,7 @@ function goEnd() {
 
      speaker.innerText = "AI is speaking";
      speaker.style.color = "#f6f0acf2"
- var temp = document.createElement("div")
+ var temp = document.createElement("div");
  temp.id = "AILOGO";
  temp.innerHTML = `<svg width="200" height="200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
      <!-- Define the gradient -->
@@ -107,12 +116,11 @@ function goEnd() {
    </svg>
 
    `
-     document.querySelector('.call-interface').appendChild(temp) 
+   document.querySelector('.call-interface').querySelector("main").appendChild(temp) 
    runsvg()
      //contactIcon.src = "https://static.vecteezy.com/system/resources/previews/023/982/115/non_2x/robot-head-cyborg-face-on-transparent-background-created-with-generative-ai-png.png"
  }
-
- function goUsr() {
+  function goUsr() {
     mode = "usr";
     // on start conversation, play blank audio to avoid ios autoplay audio restrictions
     if(typeof audio === 'undefined') {
@@ -121,15 +129,10 @@ function goEnd() {
         audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
         audio.play();
     }
-//     try { 
-//     if(window.audio) {
-//         for(let aud of window.audio) {
-//             if (aud != window.audio.last) {aud.pause()};
-//         }
-//     }
-// } catch {}
-
-        audio.pause();
+  
+            audio.pause();
+ 
+      //  audio.pause();
         console.log("all audio killed")
 
      visualizerInstance.resume()
@@ -143,7 +146,7 @@ function goEnd() {
      document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
 
      document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9)" 
-     speaker.innerText = "speak now"
+     speaker.innerHTML = "<div style='text-align:center'>Speak Now <br> <span class='subbub'>Click SEND when done</span></div>"
      speaker.style.color = "#acc2f6f2"
      //contactIcon.src = "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
 
@@ -434,7 +437,7 @@ async function playAudioFromBlob(blobUrl, speed) {
     //audioUrl
     audio.autoplay = true;
     audio.playbackRate=speed;
-    if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {
+    if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {audio.pause();
         console.log("Didnt play audio bc not in ai mode")
     };
     audio.addEventListener('ended', () => {
