@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+</head>
+<body>
+    html
+</body>
+
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyAIKD_K7v9dNL4aEYRH5ufrUkBVJXsBZpI",
+        authDomain: "lingbot-955d7.firebaseapp.com",
+        databaseURL: "https://lingbot-955d7-default-rtdb.firebaseio.com",
+        projectId: "lingbot-955d7",
+        storageBucket: "lingbot-955d7.appspot.com",
+        messagingSenderId: "728753250991",
+        appId: "1:728753250991:web:42a05089e889fe5a472a5a",
+        measurementId: "G-3KN2HM3FW9"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            const uid = user.uid;
+            console.log("User signed in:", uid);
+        } else {
+            console.log("No user signed in");
+        }
+    });
+
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().getRedirectResult().then(function(result) {
+       if (result.credential) {
+         const token = result.credential.accessToken;
+         console.log(`Success: ${token}`);
+       }
+       const user = result.user;
+       console.log("User:", user);
+     }).catch(function(error) {
+       console.error("Error:", error);
+     });
+
+</script>
+
+</html>
