@@ -3,5 +3,5 @@
     "name": "AI CHAT",
     "display": "fullscreen",
     "background_color": "black",
-    "orientation":  "landscape"
+    "orientation":  "portrait"
 }
