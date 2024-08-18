@@ -3,8 +3,8 @@ function devastricify(string) { function _0xa01e() { var _0x168bfc = ['105776SjJ
 
 function load() {
     var interfaceArea = document.querySelector(".call-interface")
-
-
+    document.addEventListener('touchmove', event => event.scale !== 1 && event.preventDefault(), { passive: false });
+    document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
     interfaceArea.style.width = window.getComputedStyle(interfaceArea, null)["width"]
     interfaceArea.style.height = window.getComputedStyle(interfaceArea, null)["height"]
 
@@ -284,14 +284,16 @@ async function transcribeUsr(fileUrl) {
             // openai voice:
 
             if (window.voice === 2) {
-                // 11labs voice: (limited characters per month - may run out, free, native, clear voice)
+                // 11labs voice: 
+                // limited characters per month - may run out, slow, free, native, clear voice
                 speak(response).then(audioUrl => {
                     if (audioUrl) {
                         playAudioFromBlob(audioUrl, audioSpeed) // speed retrieved from user selection
                     }
                 });
             } else if (window.voice === 1) {
-                // openai voice: (non-native accent, cheapish)
+                // openai voice
+                // non-native accent, cheapish, fastish
                 tts(response).then(audioUrl => {
                     if (audioUrl) {
                         playAudioFromBlob(audioUrl, audioSpeed) // speed retrieved from user selection
@@ -299,7 +301,7 @@ async function transcribeUsr(fileUrl) {
                 });
             } else if (window.voice === 3) {
                 // neets.ai voice
-                // (native accent, unclear voice, cheapest)
+                // (native accent, unclear voice, cheapest, fastest)
                 // priority 1 because its cheap
                 neetsSpeak(response);
             }
