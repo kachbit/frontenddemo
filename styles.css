@@ -25,11 +25,11 @@ html {
 }
 @media only screen and (max-device-width: 700px) {
   main {
-    padding: 50px !important;
+    
   }
   .call-interface {
-    padding: 0px !important;
-  }
+      padding: 20px 50px 20px 50px !important;
+    }
 }
 
 .call-interface {
@@ -221,7 +221,6 @@ button {
 }/* Styling for the form group */
 .form-group {
   position: relative;
-  margin-bottom: 10px;
   width: 150px;
   text-align: center;
   display: inline-block;

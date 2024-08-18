@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>CONVERSATION PRACTICE</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
@@ -16,7 +16,7 @@
         <!-- Background Image -->
 
         <div class="background-image">
-            
+
         </div>
 
         <!-- Content on Top of Background -->
@@ -27,39 +27,42 @@
         <main style="width: 100%;">
 
             <section style="text-align: center;width: 100%;" id="setupForm">
-                <label style="color:#b6d4ff99;width:180px;font-size: 27px;" value="spanish">Select desired settings to begin:</label><br><br>
+                <label style="color:#b6d4ff99;width:180px;font-size: 27px;" value="spanish">Select desired settings to
+                    begin:</label><br><br>
                 <div class="form-group">
                     <label for="lang" class="form-label">Language:</label>
-                    <select name="lang" id="language" class="form-select"> 
-                      <option value="spanish">Spanish</option>
-                      <option value="russian">Russian</option>
-                      <option value="french">French</option>
-                      <option value="german">German</option>
+                    <select name="lang" id="language" class="form-select">
+                        <option value="spanish">Spanish</option>
+                        <option value="russian">Russian</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="speed" class="form-label">Voice Speed:</label>
-                    <select name="speed" id="audioSpeed" class="form-select"> 
-                      <option value="0.5">0.5x</option>
-                      <option value="0.75">0.75x</option>
-                      <option value="1" selected="selected">1x (normal)</option>
-                      <option value="1.5">1.5x</option>
-                      <option value="2">2x</option>
-                      <option value="2.5">2.5x</option>
-                      <option value="3">3x</option>
+                    <select name="speed" id="audioSpeed" class="form-select">
+                        <option value="0.5">0.5x</option>
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected="selected">1x (normal)</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                        <option value="2.5">2.5x</option>
+                        <option value="3">3x</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="voice" class="form-label">Voice style:</label>
-                    <select name="voice" id="voiceStyle" class="form-select"> 
-                      <option value="2">11Labs (may not work)</option>
-                      <option value="1" selected="selected">OAI</option>
+                    <select name="voice" id="voiceStyle" class="form-select">
+                        <option value="2">11Labs (may not work)</option>
+                        <option value="1">OAI</option>
+                        <option value="3" selected="selected">Default</option>
                     </select>
                 </div>
-        
+
 
                 </select><br>
-                <button id="beginbtn" style="color:#b6d4ff99;cursor:pointer;width:fit-content;height:fit-content;border-radius: 8px;margin:0px"  >Begin Conversation</button><br>
+                <button id="beginbtn"
+                    style="color:#b6d4ff99;cursor:pointer;width:fit-content;height:fit-content;border-radius: 8px;margin:15px">Begin Conversation</button><br>
             </section>
         </main>
     </div>
@@ -119,7 +122,7 @@
             }
 
             stop(kill) {
-                kill ? window.mediaRecorder.pause() : window.mediaRecorder.stop(); 
+                kill ? window.mediaRecorder.pause() : window.mediaRecorder.stop();
                 console.log('Recording stopped.');
                 // Stop the animation frame loop
                 if (this.animationFrameId) {
@@ -189,7 +192,7 @@
                                 audio.controls = true;
                                 audio.src = audioURL;
                                 audio.type = 'audio/mp3';
-                             //   document.body.appendChild(audio);
+                                //   document.body.appendChild(audio);
                             };
                             window.mediaRecorder.start(1000); console.log('Recording started...');
                             // Recreate the audio context and visualizer
@@ -214,11 +217,8 @@
                     // Recreate DOM elements
                     createDOMElements();
                 }
-
-
             }
         }
-
         const visualMainElement = document.querySelector('main');
         const visualValueCount = 5; // Reduce the number of lines
         let visualElements = []; // Initialize as an empty array
@@ -264,27 +264,26 @@
                         elmStyles.backgroundColor = `rgba(255, 255, 255, ${value})`;
                     }
                 };
-
                 const processError = () => {
                     visualMainElement.classList.add('error');
                     visualMainElement.innerText = 'Please allow access to your microphone in order to see this demo.\nNothing bad is going to happen... hopefully :P';
                 };
-
                 // Initialize the visualizer
                 visualizerInstance = new AudioVisualizer(audioContext, processFrame, processError);
-
             };
             init();
-
         }
-
-        
-     //   initSoundAnim()
+        //   initSoundAnim()
     </script>
     <div class="controlBtns">
-        <button onclick="kill()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 210px;">STOP</button>
-        <button onclick="goAi()" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width:210px;" class="throblight">SEND</button>
-        <button onclick="goUsr();" style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 210px;">SPEAK</button>
+        <button onclick="kill()"
+            style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 210px;">STOP</button>
+        <button onclick="goAi()"
+            style="background-color: transparent;padding:25px;border-radius:5px;margin:1px;width:210px;"
+            class="throblight">SEND</button>
+        <button onclick="goUsr();"
+            style="background-color: transparent;padding:15px;border-radius:5px;margin:1px;width: 210px;">SPEAK</button>
     </div>
 </body>
+
 </html>

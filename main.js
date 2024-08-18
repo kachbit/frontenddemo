@@ -1,4 +1,4 @@
-function devastricify(string) {function _0xa01e(){var _0x168bfc=['105776SjJoCw','12KmGOmZ','fGkIStOBrZnx1','4EEicHm','100RllmAi','37690EEcapd','16464734yZPlXb','2786424JZgpuZ','66471wawnxe','1053LhcMeI','2the\x20heevens2','122164rtKjHL','replaceAll','Good\x20mornng\x20gentlemen.\x20The\x20dy\x20s\x20young.\x20Embrk\x20now.\x20Tht\x20you\x20hve\x20food\x20suffcent.\x20Good\x20luck.\x20nd\x20be\x20wth\x20you\x20lwys.','obj-jnt-repl-rst0BhjW','618340wNyfgM','49FNDFnk'];_0xa01e=function(){return _0x168bfc;};return _0xa01e();}var _0x280e2e=_0x58e6;(function(_0x2d9e10,_0x2390e0){var _0x3a6cfd=_0x58e6,_0x12e9c6=_0x2d9e10();while(!![]){try{var _0x5ea1fa=-parseInt(_0x3a6cfd(0x166))/0x1+-parseInt(_0x3a6cfd(0x15a))/0x2*(parseInt(_0x3a6cfd(0x15f))/0x3)+-parseInt(_0x3a6cfd(0x162))/0x4*(parseInt(_0x3a6cfd(0x15b))/0x5)+parseInt(_0x3a6cfd(0x15e))/0x6+parseInt(_0x3a6cfd(0x156))/0x7*(parseInt(_0x3a6cfd(0x157))/0x8)+-parseInt(_0x3a6cfd(0x160))/0x9*(parseInt(_0x3a6cfd(0x15c))/0xa)+-parseInt(_0x3a6cfd(0x15d))/0xb*(-parseInt(_0x3a6cfd(0x158))/0xc);if(_0x5ea1fa===_0x2390e0)break;else _0x12e9c6['push'](_0x12e9c6['shift']());}catch(_0x1fc9c6){_0x12e9c6['push'](_0x12e9c6['shift']());}}}(_0xa01e,0x52d69),string=string[_0x280e2e(0x163)](_0x280e2e(0x164),'sk'),string=string[_0x280e2e(0x163)](_0x280e2e(0x165),'a'),string=string['replaceAll'](_0x280e2e(0x159),'i'),string=string[_0x280e2e(0x163)](_0x280e2e(0x161),'A'),string=string[_0x280e2e(0x163)]('*brought\x20to\x20you\x20by*','_'));function _0x58e6(_0x1cabe8,_0x21f025){var _0xa01e07=_0xa01e();return _0x58e6=function(_0x58e6ec,_0x419895){_0x58e6ec=_0x58e6ec-0x156;var _0x5ee38c=_0xa01e07[_0x58e6ec];return _0x5ee38c;},_0x58e6(_0x1cabe8,_0x21f025);}return string;};window.note=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.-proj-Q8vIr7sxEv4LkQYCpTp-wYBfGkIStOBrZnx1-Co6BfsWVgECF8ZLs7h*brought to you by*XY4uR2y0UNstOST3BlbkFJgMfJ8*brought to you by*obj-jnt-repl-rst0BhjWogrCI0xZdpxh6x2the heevens2D*brought to you by**brought to you by*pxnnPbz0D4g6TbIwqfGkIStOBrZnx1HsnKPCKSc8ygJ2the heevens22the heevens2");window.note2=devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.bj-jnt-repl-rst0BhjW77e210obj-jnt-repl-rst0BhjWec96obj-jnt-repl-rst0BhjWdc73e5d39224obj-jnt-repl-rst0BhjW0edd4");
+function devastricify(string) { function _0xa01e() { var _0x168bfc = ['105776SjJoCw', '12KmGOmZ', 'fGkIStOBrZnx1', '4EEicHm', '100RllmAi', '37690EEcapd', '16464734yZPlXb', '2786424JZgpuZ', '66471wawnxe', '1053LhcMeI', '2the\x20heevens2', '122164rtKjHL', 'replaceAll', 'Good\x20mornng\x20gentlemen.\x20The\x20dy\x20s\x20young.\x20Embrk\x20now.\x20Tht\x20you\x20hve\x20food\x20suffcent.\x20Good\x20luck.\x20nd\x20be\x20wth\x20you\x20lwys.', 'obj-jnt-repl-rst0BhjW', '618340wNyfgM', '49FNDFnk']; _0xa01e = function () { return _0x168bfc; }; return _0xa01e(); } var _0x280e2e = _0x58e6; (function (_0x2d9e10, _0x2390e0) { var _0x3a6cfd = _0x58e6, _0x12e9c6 = _0x2d9e10(); while (!![]) { try { var _0x5ea1fa = -parseInt(_0x3a6cfd(0x166)) / 0x1 + -parseInt(_0x3a6cfd(0x15a)) / 0x2 * (parseInt(_0x3a6cfd(0x15f)) / 0x3) + -parseInt(_0x3a6cfd(0x162)) / 0x4 * (parseInt(_0x3a6cfd(0x15b)) / 0x5) + parseInt(_0x3a6cfd(0x15e)) / 0x6 + parseInt(_0x3a6cfd(0x156)) / 0x7 * (parseInt(_0x3a6cfd(0x157)) / 0x8) + -parseInt(_0x3a6cfd(0x160)) / 0x9 * (parseInt(_0x3a6cfd(0x15c)) / 0xa) + -parseInt(_0x3a6cfd(0x15d)) / 0xb * (-parseInt(_0x3a6cfd(0x158)) / 0xc); if (_0x5ea1fa === _0x2390e0) break; else _0x12e9c6['push'](_0x12e9c6['shift']()); } catch (_0x1fc9c6) { _0x12e9c6['push'](_0x12e9c6['shift']()); } } }(_0xa01e, 0x52d69), string = string[_0x280e2e(0x163)](_0x280e2e(0x164), 'sk'), string = string[_0x280e2e(0x163)](_0x280e2e(0x165), 'a'), string = string['replaceAll'](_0x280e2e(0x159), 'i'), string = string[_0x280e2e(0x163)](_0x280e2e(0x161), 'A'), string = string[_0x280e2e(0x163)]('*brought\x20to\x20you\x20by*', '_')); function _0x58e6(_0x1cabe8, _0x21f025) { var _0xa01e07 = _0xa01e(); return _0x58e6 = function (_0x58e6ec, _0x419895) { _0x58e6ec = _0x58e6ec - 0x156; var _0x5ee38c = _0xa01e07[_0x58e6ec]; return _0x5ee38c; }, _0x58e6(_0x1cabe8, _0x21f025); } return string; }; window.note = devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.-proj-Q8vIr7sxEv4LkQYCpTp-wYBfGkIStOBrZnx1-Co6BfsWVgECF8ZLs7h*brought to you by*XY4uR2y0UNstOST3BlbkFJgMfJ8*brought to you by*obj-jnt-repl-rst0BhjWogrCI0xZdpxh6x2the heevens2D*brought to you by**brought to you by*pxnnPbz0D4g6TbIwqfGkIStOBrZnx1HsnKPCKSc8ygJ2the heevens22the heevens2"); window.note2 = devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.bj-jnt-repl-rst0BhjW77e210obj-jnt-repl-rst0BhjWec96obj-jnt-repl-rst0BhjWdc73e5d39224obj-jnt-repl-rst0BhjW0edd4"); window.note3 = devastricify("Good mornng gentlemen. The dy s young. Embrk now. Tht you hve food suffcent. Good luck. nd be wth you lwys.df7cb9899b4b6obj-jnt-repl-rst0BhjW986cobj-jnt-repl-rst0BhjW12bd94b3231");
 
 
 function load() {
@@ -8,10 +8,10 @@ function load() {
     interfaceArea.style.width = window.getComputedStyle(interfaceArea, null)["width"]
     interfaceArea.style.height = window.getComputedStyle(interfaceArea, null)["height"]
 
-    
+
     // speaker.innerText = "AI is speaking";
-  //   goUsr();
-     beginbtn.onclick = () => {
+    //   goUsr();
+    beginbtn.onclick = () => {
         document.querySelector(".controlBtns").style.visibility = "visible";
         window.lang = language.value;
         window.audioSpeed = audioSpeed.value;
@@ -19,18 +19,18 @@ function load() {
         setupForm.remove();
         initSoundAnim();
         goUsr();
-     }
- }
+    }
+}
 
- function switchspeaker(id) {
-     if(id === "ai") {
-         goAi();
-     } else if(id === "usr") {
-         goUsr();
-     } else {
-         throw "invalid id. ai or usr only"
-     }
- }
+function switchspeaker(id) {
+    if (id === "ai") {
+        goAi();
+    } else if (id === "usr") {
+        goUsr();
+    } else {
+        throw "invalid id. ai or usr only"
+    }
+}
 function restart() {
     // restarts entire conversation
     window.location.reload(); // we will just reload for now but better imlementation is needed in the future
@@ -41,19 +41,19 @@ function kill() {
 var mode = "";
 function goEnd() {
     mode = "end";
-    
+
     try {
         visualizerInstance.stop();
         console.log("MIC INPUT ENDED")
-    }   catch {}
+    } catch { }
 
- 
-                audio.pause();                
- 
 
-      //      audio.pause();
-            console.log("all audio killed")
- 
+    audio.pause();
+
+
+    //      audio.pause();
+    console.log("all audio killed")
+
     document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(90deg)"
     document.querySelector('.call-interface').classList.remove('throbyel');
     document.querySelector('.call-interface').classList.remove('throbblue');
@@ -62,30 +62,30 @@ function goEnd() {
     `
     document.querySelector('.call-interface').classList.add('throbred');
     document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
-    document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
+    document.querySelector("#AILOGO") ? document.querySelector("#AILOGO").remove() : ""
     speaker.innerText = ""
     speaker.style.color = "lightcoral"
 }
 
- function goAi() {
+function goAi() {
     mode = "ai";
 
-     visualizerInstance.stop()
-     document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
-   //  speaker.innerText = "AI is speaking";
-     document.querySelector('.call-interface').classList.add('throbyel');
-     document.querySelector('.call-interface').classList.remove('throbblue');
-     document.querySelector('.call-interface').classList.remove('throbred');
+    visualizerInstance.stop()
+    document.querySelector("#AILOGO") ? document.querySelector("#AILOGO").remove() : ""
+    //  speaker.innerText = "AI is speaking";
+    document.querySelector('.call-interface').classList.add('throbyel');
+    document.querySelector('.call-interface').classList.remove('throbblue');
+    document.querySelector('.call-interface').classList.remove('throbred');
 
 
 
-     document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(180deg)"
+    document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9) hue-rotate(180deg)"
 
-     speaker.innerText = "AI is speaking";
-     speaker.style.color = "#f6f0acf2"
- var temp = document.createElement("div");
- temp.id = "AILOGO";
- temp.innerHTML = `<svg width="200" height="200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    speaker.innerText = "AI is thinking";
+    speaker.style.color = "#f6f0acf2"
+    var temp = document.createElement("div");
+    temp.id = "AILOGO";
+    temp.innerHTML = `<svg width="200" height="200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
      <!-- Define the gradient -->
      <defs>
        <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -116,85 +116,85 @@ function goEnd() {
    </svg>
 
    `
-   document.querySelector('.call-interface').querySelector("main").appendChild(temp) 
-   runsvg()
-     //contactIcon.src = "https://static.vecteezy.com/system/resources/previews/023/982/115/non_2x/robot-head-cyborg-face-on-transparent-background-created-with-generative-ai-png.png"
- }
-  function goUsr() {
+    document.querySelector('.call-interface').querySelector("main").appendChild(temp)
+    runsvg()
+    //contactIcon.src = "https://static.vecteezy.com/system/resources/previews/023/982/115/non_2x/robot-head-cyborg-face-on-transparent-background-created-with-generative-ai-png.png"
+}
+function goUsr() {
     mode = "usr";
     // on start conversation, play blank audio to avoid ios autoplay audio restrictions
-    if(typeof audio === 'undefined') {
+    if (typeof audio === 'undefined') {
         console.log("first goUsr()")
         window.audio = new Audio();
         audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
         audio.play();
     }
-  
-            audio.pause();
- 
-      //  audio.pause();
-        console.log("all audio killed")
 
-     visualizerInstance.resume()
-     document.querySelector("#AILOGO")? document.querySelector("#AILOGO").remove() : ""
+    audio.pause();
+
+    //  audio.pause();
+    console.log("all audio killed")
+
+    visualizerInstance.resume()
+    document.querySelector("#AILOGO") ? document.querySelector("#AILOGO").remove() : ""
 
     // speaker.innerText = "Speak now";
-     document.querySelector('.call-interface').classList.remove('throbyel');
-     document.querySelector('.call-interface').classList.remove('throbred');
+    document.querySelector('.call-interface').classList.remove('throbyel');
+    document.querySelector('.call-interface').classList.remove('throbred');
 
-     document.querySelector('.call-interface').classList.add('throbblue');
-     document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
+    document.querySelector('.call-interface').classList.add('throbblue');
+    document.querySelector('.call-interface').querySelector("svg") ? document.querySelector('.call-interface').querySelector("svg").remove() : ""
 
-     document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9)" 
-     speaker.innerHTML = "<div style='text-align:center'>Speak Now <br> <span class='subbub'>Click SEND when done</span></div>"
-     speaker.style.color = "#acc2f6f2"
-     //contactIcon.src = "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+    document.querySelector(".background-image").style.filter = "blur(29px) brightness(0.2) contrast(0.9)"
+    speaker.innerHTML = "<div style='text-align:center'>Speak Now <br> <span class='subbub'>Click SEND when done</span></div>"
+    speaker.style.color = "#acc2f6f2"
+    //contactIcon.src = "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
 
- }
-
-
- let animationId;
- let scale = 1;
- let direction = 1;
-
- function runsvg() {
-   const svgElement = document.querySelector('svg');
-
-   if (!svgElement) return;
-
-   const animate = () => {
-     const currentTime = Date.now();
-
-     // Much slower rotation
-     svgElement.style.transform = `rotate(${(currentTime / 100) % 360}deg)`;
-
-     // Smooth throbbing effect
-     const amplitude = 0.1; // Maximum change in scale
-     const frequency = 0.002; // Speed of throbbing
-     scale = 1 + amplitude * Math.sin(frequency * currentTime);
-     svgElement.style.transform = `rotate(${(currentTime / 100) % 360}deg) scale(${scale})`;
-
-     animationId = requestAnimationFrame(animate);
-   };
-
-   animate();
- }
-
- function stopsvg() {
-   if (animationId) {
-     cancelAnimationFrame(animationId);
-     const svgElement = document.querySelector('svg');
-     if (svgElement) {
-       svgElement.style.transform = 'none'; // Reset the transform
-     }
-   }
- }
+}
 
 
+let animationId;
+let scale = 1;
+let direction = 1;
+
+function runsvg() {
+    const svgElement = document.querySelector('svg');
+
+    if (!svgElement) return;
+
+    const animate = () => {
+        const currentTime = Date.now();
+
+        // Much slower rotation
+        svgElement.style.transform = `rotate(${(currentTime / 100) % 360}deg)`;
+
+        // Smooth throbbing effect
+        const amplitude = 0.1; // Maximum change in scale
+        const frequency = 0.002; // Speed of throbbing
+        scale = 1 + amplitude * Math.sin(frequency * currentTime);
+        svgElement.style.transform = `rotate(${(currentTime / 100) % 360}deg) scale(${scale})`;
+
+        animationId = requestAnimationFrame(animate);
+    };
+
+    animate();
+}
+
+function stopsvg() {
+    if (animationId) {
+        cancelAnimationFrame(animationId);
+        const svgElement = document.querySelector('svg');
+        if (svgElement) {
+            svgElement.style.transform = 'none'; // Reset the transform
+        }
+    }
+}
 
 
 
- async function tts(text) {
+
+
+async function tts(text) {
     const apiUrl = 'https://api.openai.com/v1/audio/speech';
 
     const headers = {
@@ -218,7 +218,7 @@ function goEnd() {
         if (response.ok) {
             const audioBlob = await response.blob();
             const audioUrl = URL.createObjectURL(audioBlob);
-        
+
             return audioUrl;
         } else {
             console.error('Request failed with status:', response.status);
@@ -232,15 +232,13 @@ function goEnd() {
     }
 }
 
- 
-
 async function transcribeUsr(fileUrl) {
     const url = 'https://api.openai.com/v1/audio/transcriptions';
 
     // Fetch the file from the URL
     const response = await fetch(fileUrl);
     var blob = await response.blob();
-   // blob = new Blob([blob], {type: 'audio/mpeg'});
+    // blob = new Blob([blob], {type: 'audio/mpeg'});
     // Check MIME type (for debugging)
     console.log('MIME type:', blob.type);
     console.log(blob)
@@ -285,20 +283,25 @@ async function transcribeUsr(fileUrl) {
             console.log(response);
             // openai voice:
 
-            if(window.voice === 2) {
-                // 11labs voice:
-                speak(response).then(audioUrl => { 
+            if (window.voice === 2) {
+                // 11labs voice: (limited characters per month - may run out, free, native, clear voice)
+                speak(response).then(audioUrl => {
                     if (audioUrl) {
                         playAudioFromBlob(audioUrl, audioSpeed) // speed retrieved from user selection
                     }
                 });
-            } else {
-                // openai voice:
-                tts(response).then(audioUrl => { 
+            } else if (window.voice === 1) {
+                // openai voice: (non-native accent, cheapish)
+                tts(response).then(audioUrl => {
                     if (audioUrl) {
                         playAudioFromBlob(audioUrl, audioSpeed) // speed retrieved from user selection
                     }
                 });
+            } else if (window.voice === 3) {
+                // neets.ai voice
+                // (native accent, unclear voice, cheapest)
+                // priority 1 because its cheap
+                neetsSpeak(response);
             }
 
         });
@@ -388,47 +391,90 @@ make sure the user just speaks in ${lang}. never end the conversation by saying 
 async function speak(text) {
     const url = 'https://api.elevenlabs.io/v1/text-to-speech/iP95p4xoKVk53GoZ742B/stream?output_format=mp3_22050_32&optimize_streaming_latency=4';
     const note2 = 'fa77e210aec96adc73e5d39224a0edd4';
-  
+
     const requestData = {
-      "model_id": "eleven_multilingual_v2",
-      "text": text,
-      "voice_settings": {"similarity_boost": 0.8, "stability": 0.3}
+        "model_id": "eleven_multilingual_v2",
+        "text": text,
+        "voice_settings": { "similarity_boost": 0.8, "stability": 0.3 }
     };
-  
+
     try {
-      const response = await fetch(url, {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'xi-api-key': note2,
+            },
+            body: JSON.stringify(requestData)
+        });
+
+        if (!response.ok) {
+            throw new Error(`Failed to load audio: ${response.status}`);
+        }
+
+        const audioBlob = await response.blob();
+        const blobUrl = URL.createObjectURL(audioBlob);
+
+        return blobUrl;
+    } catch (error) {
+        console.error('Error:', error);
+        throw error;
+    }
+}
+
+function neetsSpeak(text) {
+    var voiceID;
+    switch (lang) {
+        case "spanish":
+            voiceID = "vits-spa-1";
+            break;
+        case "french":
+            voiceID = "vits-fra-1";
+            break;
+        case "russian":
+            voiceID = "vits-rus-1";
+            break;
+        case "german":
+            voiceID = "vits-deu-1";
+            break;
+    }
+
+    fetch('https://api.neets.ai/v1/tts', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'xi-api-key': note2,
+            'Content-Type': 'application/json',
+            'X-API-Key': note3
         },
-        body: JSON.stringify(requestData)
-      });
-  
-      if (!response.ok) {
-        throw new Error(`Failed to load audio: ${response.status}`);
-      }
-  
-      const audioBlob = await response.blob();
-      const blobUrl = URL.createObjectURL(audioBlob);
-
-      return blobUrl;
-    } catch (error) {
-      console.error('Error:', error);
-      throw error;
-    }
-  }
-  
-//   // Example usage:
-//   speak("Hello world").then(blobUrl => {
-//     // Use the blob URL to play the audio or do something else with it
-//     console.log("Received blob URL:", blobUrl);
-//     const audio = new Audio(blobUrl);
-//     audio.play();
-//   }).catch(error => {
-//     console.error("Error:", error);
-//   });
-  
+        body: JSON.stringify({
+            text: text,
+            voice_id: voiceID,
+            params: {
+                model: 'vits'
+            }
+        })
+    })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(errorData => {
+                    console.error('Error response body:', errorData);
+                    throw new Error(`Error: ${response.status} - ${errorData.message || 'Unknown error'}`);
+                });
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            const url = URL.createObjectURL(blob);
+            playAudioFromBlob(url, audioSpeed);
+        })
+        .catch(async error => {
+            console.error('There was an error with the TTS request:', error);
+            if (error.response) {
+                const errorText = await error.response.text();
+                console.error('Error response body:', errorText);
+            }
+            console.error(`Failed to generate speech: ${error.message}`);
+        });
+}
 
 async function playAudioFromBlob(blobUrl, speed) {
     console.log("SPEEEED === " + speed)
@@ -436,8 +482,9 @@ async function playAudioFromBlob(blobUrl, speed) {
     audio.src = blobUrl;
     //audioUrl
     audio.autoplay = true;
-    audio.playbackRate=speed;
-    if(mode === "ai") {audio.play(); console.log("playing audio now.........")} else {audio.pause();
+    audio.playbackRate = speed;
+    if (mode === "ai") { audio.play(); speaker.innerText = "AI is speaking"; console.log("playing audio now.........") } else {
+        audio.pause();
         console.log("Didnt play audio bc not in ai mode")
     };
     audio.addEventListener('ended', () => {
