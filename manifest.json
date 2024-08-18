@@ -1,7 +1,7 @@
 {
     "short_name": "AICHAT",
-    "name": "AI CHAT",
-    "display": "fullscreen",
+    "name": "AI Chat",
+    "display": "standalone",
     "background_color": "black",
     "orientation":  "portrait"
 }
