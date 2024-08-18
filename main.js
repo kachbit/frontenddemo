@@ -4,11 +4,9 @@ function devastricify(string) { function _0xa01e() { var _0x168bfc = ['105776SjJ
 function load() {
     var interfaceArea = document.querySelector(".call-interface")
 
-    // disable device rotation and pinch to zoom to make it more app-like on mobile:
+    // disable pinch to zoom to make it more app-like on mobile:
     document.addEventListener('touchmove', event => event.scale !== 1 && event.preventDefault(), { passive: false });
     document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
-    screen.lockOrientation("orientation");
-    screen.orientation.lock();
 
     interfaceArea.style.width = window.getComputedStyle(interfaceArea, null)["width"]
     interfaceArea.style.height = window.getComputedStyle(interfaceArea, null)["height"]
